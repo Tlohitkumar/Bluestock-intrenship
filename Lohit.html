@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bluestock Login Form</title>
+    <link rel="stylesheet" href="lohit.css">
+</head>
+<body>
+    <div class="container">
+        <div class="login-box">
+            <div class="login-header">
+                <img src="C:\Users\bhanu\OneDrive\Pictures\Downloads\WhatsApp_Image_2024-08-11_at_18.21.58-removebg-preview.png" alt="Bluestocks Logo">
+                <header>BLUESTOCKS</header>
+            </div>
+            <div class="input-box">
+                <input type="text" class="input-field" placeholder="Email" autocomplete="off" required>
+            </div>
+            <div class="input-box">
+                <input type="password" class="input-field" placeholder="Password" autocomplete="off" required>
+            </div>
+            <div class="forgot">
+                <section>
+                    <input type="checkbox" id="check">
+                    <label for="check">Remember me</label>
+                </section>
+                <section>
+                    <a href="#" onclick="toggleForm('forgot-password')">Forgot password?</a>
+                </section>
+            </div>
+            <div class="input-submit">
+                <button class="submit-btn" id="submit">Sign In</button>
+            </div>
+            <div class="sign-up-link">
+                <p>Don't have an account? <a href="#" onclick="toggleForm('sign-up')">Sign Up</a></p>
+            </div>
+        </div>
+
+        <!-- Forgot Password Form -->
+        <div class="forgot-password hidden">
+            <h2>Forgot Password</h2>
+            <input type="email" placeholder="Enter your email" required>
+            <button class="submit-btn">Submit</button>
+            <a href="#" onclick="toggleForm('login')">Back to Login</a>
+        </div>
+
+        <!-- Sign Up Form -->
+        <div class="sign-up hidden">
+            <h2>Sign Up</h2>
+            <input type="text" placeholder="Name" required>
+            <input type="email" placeholder="Email" required>
+            <input type="password" placeholder="Password" required>
+            <button class="submit-btn">Sign Up</button>
+            <a href="#" onclick="toggleForm('login')">Back to Login</a>
+        </div>
+    </div>
+
+    <script src="lohit.js"></script>
+</body>
+</html>
